@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Scanner;
 
 class FlightReservation {
     private final List<Flight> flights;
@@ -30,5 +31,14 @@ class FlightReservation {
 
     private Flight findFlight(String flightNumber) {
         return flights.stream().filter(f -> f.getFlightNumber().equalsIgnoreCase(flightNumber)).findFirst().orElse(null);
+    }
+
+    public void bookFlight(Scanner scanner, String userID) {
+    }
+
+    public void cancelFlight(String userID) {
+    }
+
+    public void displayFlightsByUser(String userID) {
     }
 }

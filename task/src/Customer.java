@@ -2,15 +2,15 @@
 import java.util.*;
 
 class Customer implements ICustomer {
-    private final String userID;
-    private String email;
-    private String name;
-    private String phone;
-    private final String password;
-    private String address;
-    private int age;
-    private List<Flight> flightsRegisteredByUser;
-    private List<Integer> numOfTicketsBookedByUser;
+     final String userID;
+     String email;
+     String name;
+     String phone;
+     final String password;
+     String address;
+     int age;
+     List<Flight> flightsRegisteredByUser;
+     List<Integer> numOfTicketsBookedByUser;
 
     // Constructor
     public Customer(String name, String email, String password, String phone, String address, int age) {
